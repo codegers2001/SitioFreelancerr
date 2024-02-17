@@ -1,0 +1,106 @@
+:root {
+    --nav: #0097A7;
+    --nav-hover: #00BCD4;
+    --iconos: #FFC107;
+    --enlacesHover: #FFC107;
+    --negro: #000;
+    --blanco: #fff;
+    --formulario: #757575;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.krub-regular {
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.krub-medium {
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.krub-semibold {
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.krub-bold {
+    font-family: "Krub", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header {
+    padding: 3rem 0;
+}
+
+.header__titulo {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.header__titulo span {
+    font-size: 2rem;
+}
+
+.navegacion {
+    background-color: var(--nav);
+}
+
+.navegacion__lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion__lista li {
+    list-style: none;
+}
+
+.navegacion__lista li:hover {
+    background-color: var(--enlacesHover);
+}
+
+.navegacion__lista li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color .3s ease;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+}
+
+.navegacion__lista li a:hover {
+    color: var(--negro);
+}
+
+@media (min-width: 768px) {
+   .navegacion__lista {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+}
